@@ -1,22 +1,9 @@
 {
-    "name": "The name of your theme",
-    "about_url": "http://example.com/about",
-    "license_url": "http://example.com/license",
-    "assets": {
-        "font": "assets/font.woff2"
-    },
-    "color_schemes": {
-        "Your Scheme Name": {
-            "primary": "586E75",
-            "secondary": "EEE8D5",
-            "tertiary": "268BD2",
-            "quaternary": "CB4B16",
-            "header_background": "002B36",
-            "header_primary": "93A1A1",
-            "highlight": "B58900",
-            "danger": "CB4B16",
-            "success": "859900",
-            "love": "DC322F"
-        }
-    }
+    "name": "CircleCI Custom Edits",
+    "component": true,
+    "about_url": null,
+    "license_url": null
+    // "assets": {
+    //     "font": "assets/font.woff2"
+    // }
 }

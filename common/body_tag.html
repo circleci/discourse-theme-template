@@ -1,0 +1,32 @@
+<script>
+    Discourse.ExternalNavItem = Discourse.NavItem.extend({
+      href : function() {
+        return this.get('href');
+      }.property('href')
+    });
+  
+    I18n.translations.en.js.filters.unanswered = { title: "Unanswered", help: "Topics that have not be answered" };
+    
+    I18n.translations.en.js.filters.top_users = { title: "Top users", help: "Top users this month by replies" };
+  
+    Discourse.NavItem.reopenClass({
+      buildList : function(category, args) {
+        var list = this._super(category, args);
+        if(!category) {
+          list.push(Discourse.ExternalNavItem.create({href: '/latest?max_posts=1', name: 'unanswered'}));
+        }
+        return list;
+      }
+    });
+    
+      Discourse.NavItem.reopenClass({
+      buildList : function(category, args) {
+        var list = this._super(category, args);
+        if(!category) {
+          list.push(Discourse.ExternalNavItem.create({href: '/u?order=post_count&period=monthly', name: 'top_users'}));
+        }
+        return list;
+      }
+    });
+    
+  </script>

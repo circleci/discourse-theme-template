@@ -1,5 +1,5 @@
-# discourse-theme-template
+# CircleCI Discourse edits
+Edits to [CircleCI Discuss](https://discuss.circleci.com) as a theme component.  
 
-Discourse now supports [native themes](https://meta.discourse.org/t/native-theme-support/47494/26) that can be sourced from a remote git repository.
+***ported from [@mattevans](https://github.com/mattevans/discourse-theme-template)***
 
-Themes follow a very [specific file structure](https://meta.discourse.org/t/how-to-develop-custom-themes/60848). This is the structure.
